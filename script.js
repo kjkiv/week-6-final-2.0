@@ -10,10 +10,10 @@ const CARD_VALUE_MAP = {
     "8": 8,
     "9": 9,
     "10":10,
-    "J": 11,
-    "Q": 12,
-    "K": 13,
-    "A": 14,
+    J: 11,
+    Q: 12,
+    K: 13,
+    A: 14,
 
 
 
@@ -31,13 +31,14 @@ document.addEventListener("click", () => {
 if (stop) {
     startGame()
     return
-}
+  } 
 
-if (inRound) {
+  if (inRound) {
     cleanBeforeRound()
-} else {
+  } else {
     flipCards()
-}
+  }
+
 })
 
 startGame()
